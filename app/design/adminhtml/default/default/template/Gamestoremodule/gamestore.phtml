@@ -1,0 +1,39 @@
+<style>
+.product_csv_container
+{
+  position: absolute;
+  background-color: #ccc;
+  width: 100%;
+  height: 548px;
+  margin-top: 136px;
+}
+</style>
+<?php
+		
+		if(isset($_POST['submit']))
+			{
+			
+				$csv_file1=$_POST[csv_file];
+				$file = $_FILES["csv_file"]["name"];
+				$filePath = "CSV_files/" . $file;
+				move_uploaded_file($_FILES["csv_file"]["tmp_name"], $filePath);
+				
+				}
+				
+				?>
+<div class="product_csv_container">
+	<h2>Please upload CSV file to upload file</h2>
+	<div class="upload_csv">
+	<form action="#" name="csv_form" enctype="multipart/form-data">
+	<input type="file" name="csv_file" />
+	<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+	<input type="submit" name="submit" />
+	</form>
+	
+	
+	</div>
+
+
+
+
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <gamestore_gamestoremodule>
+            <version>1.0.0</version>
+            <depends>
+                <!-- no dependencies -->
+            </depends>
+        </gamestore_gamestoremodule>
+    </modules>
+    <global>
+        <models />
+        <blocks />
+        <resources />
+        <extraconfig />
+        <helpers>
+            <gamestoremodule>
+                <class>Gamestore_Gamestoremodule_Helper</class>
+            </gamestoremodule>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <gamestore_gamestoremodule>
+                <use>admin</use>
+                <args>
+                    <module>Gamestore_Gamestoremodule</module>
+                    <frontName>gamestoremodule</frontName>
+                </args>
+            </gamestore_gamestoremodule>
+        </routers>
+    </admin>
+</config>

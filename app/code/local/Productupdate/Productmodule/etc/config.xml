@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Productupdate_Productmodule>
+            <version>1.0.0</version>
+            <depends>
+                <!-- no dependencies -->
+            </depends>
+        </Productupdate_Productmodule>
+    </modules>
+    <global>
+        <models />
+        <blocks />
+        <resources />
+        <extraconfig />
+        <helpers>
+            <productmodule>
+                <class>Productupdate_Productmodule_Helper</class>
+            </productmodule>
+        </helpers>
+    </global>
+    <admin>
+        <routers>
+            <Productupdate_Productmodule>
+                <use>admin</use>
+                <args>
+                    <module>Productupdate_Productmodule</module>
+                    <frontName>productmodule</frontName>
+                </args>
+            </Productupdate_Productmodule>
+        </routers>
+    </admin>
+</config>

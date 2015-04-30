@@ -1,0 +1,15 @@
+<?xml version=”1.0″?>
+
+<layout version=”0.1.0″>
+
+            <Greenmodule_adminhtml_editform_index>
+
+                   <reference name=”content”>
+
+                     <block type=”Greenmodule/adminhtml_myblock” name=”adminhtml_myblock” template=”Greenmodule/edit_form.phtml”/>
+
+                   </reference>
+
+            </Greenmodule_adminhtml_editform_index>
+
+</layout>

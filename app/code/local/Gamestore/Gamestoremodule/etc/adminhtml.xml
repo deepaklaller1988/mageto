@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <green_menu translate="title" module="gamestoremodule">
+            <title>game store</title>
+            <sort_order>9999</sort_order>
+            <action>gamestoremodule/index/index</action>
+        </green_menu>
+    </menu>
+</config>

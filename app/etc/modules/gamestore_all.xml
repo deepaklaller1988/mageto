@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gamestore_Gamestoremodule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gamestore_Gamestoremodule>
+    </modules>
+</config>

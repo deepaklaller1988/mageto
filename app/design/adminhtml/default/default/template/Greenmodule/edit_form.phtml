@@ -1,0 +1,438 @@
+<?php
+/**
+ * Magento
+
+ */
+?>
+<!-- my custom javascript code starts here -->
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<script>
+ function toggleTable()
+    {
+         var elem=document.getElementById("side_menu");
+		 var delete_btn=document.getElementById("delete_btn");
+         var hide = elem.style.display =="block";
+		 var delete_button = delete_btn.style.display =="block";
+         if (hide && delete_button) {
+             elem.style.display="none";
+			 delete_btn.style.display="none";
+        } 
+        else {
+           elem.style.display="block";
+		   delete_btn.style.display="block";
+        }
+    }
+</script>
+
+<!-- my custom javascript code ends here -->
+<style>
+#custom_wrapper
+{
+position:absolute;
+margin-top:200px;
+width:100%;
+height:485px;
+  background: #e86165;
+
+
+
+}
+.wrapper_h1
+{
+color:#fff;
+text-align:center;
+}
+#images_wrapper
+{
+width: 100%;
+height: 400px;
+margin-top: 10px;
+background-color: #cccccc;
+}
+#images_wrapper ul li{
+float:left;
+/*padding:10px 10px 10px 10px;*/
+position:relative;
+}
+#image_container
+{
+width:100%;
+height:400px;
+/*text-align: center;*/
+background:url("http://organic.sarpstudio.com/light/wp-content/uploads/2015/04/old_wall.png") repeat;
+overflow-x: hidden;
+overflow-y: auto;
+padding:0px 20px;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+/* custom check box starts here  */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/*** basic styles ***/
+
+
+/*** custom checkboxes ***/
+
+
+input[type=checkbox] + img:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + img:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + img:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + img:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + img:before { letter-spacing: 5px; } /* allow space for check mark */
+
+/* customcheck box ends here  */
+#images_wrapper ul li {
+  float: left;
+  padding:10px 10px 0px 0px;
+  /*display: inline-block;*/
+  box-sizing: border-box;
+  width:16.666%;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+#images_wrapper ul li input {
+  vertical-align: top;
+  display: inline-block;
+  position: absolute;
+  right: -9px;
+  top: 160px;
+
+  }
+#delete_btn
+{
+  margin-left: 125px;
+  margin-top: -435px;
+  cursor:pointer;
+  display:none;
+}
+.delete
+{
+  width: 50px;
+  height: 50px;
+}
+
+#side_menu
+{
+position:absolute;
+width: 250px;
+height: 200px;
+background-color:#f9f9f9;
+border:4px solid #2F2F2F;
+margin-top: 45px;
+display:none;
+z-index: 999;
+box-sizing:border-box;
+-moz-box-sizing:border-box; 
+-webkit-box-sizing:border-box;
+padding:10px;
+}
+#menu_btn
+{
+position:absolute;
+text-align:center;
+line-height:25px;
+width:100px;
+height:25px;
+background-color:rgb(0, 0, 0);
+float:left;
+cursor:pointer;
+color:#fff;
+font-size: 16px;
+margin:10px 0px 0px 10px;
+}
+#menu_btn:hover
+{
+background-color:rgb(58, 58, 58);
+}
+.check_buttons
+{
+padding:0px 0px 10px 0px;
+}
+
+.check_buttons a{ display:inline-block; background:#D32424; text-align:center; padding:5px; color:#fff; text-decoration:none; font-weight:700;}
+.check_buttons a:hover{ background:#2f2f2f; color:#fff;}
+.check_buttons a:focus{ background:#2f2f2f; color:#fff;}
+
+.check_buttons a:nth-child(1){ background:#ea7601; color:#fff;}
+.check_buttons a:nth-child(1):hover{ background:#2f2f2f; color:#fff;}
+.check_buttons a:nth-child(1):focus{ background:#2f2f2f; color:#fff;}
+
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  margin-top: 10px;
+  content: 'choose image';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+.btn{
+width:260px;
+height:50px;
+margin-left:45px
+}
+.button1{
+width: 90px;
+height: 30px;
+margin-top: 23px;
+margin-left: -45px;
+border:none;
+outline:none;
+box-shadow:0 3px 2px 0 #2c80a2;
+color:#fff;
+font-size:14px;
+text-shadow:0 1px rgba(0,0,0,0.4);
+background-color:#1E7C98;
+font-weight:700;
+background-image:url(../images/1.png);
+background-repeat:no-repeat;
+background-position:200px
+}
+.button1:hover{
+background-color:#1E9CC2;
+cursor:pointer
+}
+.button1:active{
+padding-top:2px;
+box-shadow:none
+}
+.button2{
+  width: 100px;
+  height: 25px;
+  margin-top: 23px;
+  margin-left: -45px;
+  border: none;
+  outline: none;
+  color: #000;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-position: 200px;
+}
+.button2:hover{
+background-color:#AB2727;
+cursor:pointer
+}
+.button2:active{
+padding-top:2px;
+box-shadow:none
+}
+.image_shower
+{
+position: relative;
+width: 100%;
+height: 186px;
+border: 3px solid #ebebeb;
+padding: 5px;
+background:#fff;
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+}
+
+.image_shower:hover div.image_name{ color:#ea7601;}
+.image_shower label,.image_shower label img{ display:inline-block; width:100%; border:2px solid #ebebeb; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+.image_name{ font-size:18px; color:#000; font-family: 'Source Sans Pro', sans-serif; padding:5px 0px;}
+
+
+
+.checkbox {
+  position: relative;
+  top: -0.375rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.checkbox:before {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #9D9D9D;
+}
+
+.checkbox:checked:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+ height: .5rem;
+  border-color: #009688;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #EFEFEF;
+  cursor: pointer;
+}
+
+
+
+
+</style>
+<?php
+		
+		$connection = Mage::getSingleton('core/resource')->getConnection('magento_pract');
+		$result = $connection->fetchAll("SELECT id,path,name FROM Slider");
+		$large_result = $connection->fetchAll("SELECT path,name FROM large_slider");
+		if(isset($_POST['submit']))
+			{
+				$image_name=$_POST[image_name];
+				$file = $_FILES["image1"]["name"];
+				$filePath = "media/slider/small/" . $file;
+				move_uploaded_file($_FILES["image1"]["tmp_name"], $filePath);
+				$sql = "INSERT INTO `slider` (`name`,`path`) VALUES ('$image_name','$file')";
+				$connection->query($sql);
+				
+				
+				
+				?>
+				<script>
+
+    location.replace("http://localhost/rahul/magento_pract/index.php/greenmodule/index/index/key/f70724375c0a6c644050a483ead94cea/")
+
+</script>
+<?php
+			}
+		if(isset($_POST['delete']))
+			{
+				for($i=0;$i<count($_POST['checkbox']);$i++)
+				{
+				$del_id=$_POST['checkbox'][$i];
+				$sql1 = "DELETE FROM Slider WHERE id='$del_id'";
+				$connection->query($sql1);
+				}
+?>
+<script>
+
+    location.replace("http://localhost/rahul/magento_pract/index.php/greenmodule/index/index/key/6ad92f0255197d5a215ebd6ed4d14908")
+
+</script>
+	<?php    }  ?>
+<script type="text/javascript" language="javascript">
+function checkAll(delete_form, checktoggle)
+{
+  var checkboxes = new Array(); 
+  checkboxes = document[delete_form].getElementsByTagName('input');
+ 
+  for (var i=0; i<checkboxes.length; i++)  {
+    if (checkboxes[i].type == 'checkbox')   {
+      checkboxes[i].checked = checktoggle;
+    }
+  }
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["image_name"].value;
+    if (x == null || x == "") {
+        alert("Please enter image name");
+        return false;
+    }
+	var x = document.forms["myForm"]["image1"].value;
+    if (x == null || x == "") {
+        alert("Please choose an image");
+        return false;
+    }
+}
+</script>
+<div id="custom_wrapper">
+<div id="menu_btn" onclick="toggleTable();"><i class="fa fa-bars"></i>&nbsp; Menu</div>
+<div id="side_menu">
+<div class="check_buttons">	
+		<a onclick="javascript:checkAll('delete_form', true);" href="javascript:void();">check all</a>
+		<a onclick="javascript:checkAll('delete_form', false);" href="javascript:void();">uncheck all</a>
+	</div>
+<!-- insert part starts here -->
+<form method="post" name="myForm" action="" enctype="multipart/form-data" onsubmit="return validateForm()">
+		<span>Image Name</span>
+		<input type="text" name="image_name" style="width:100%" />
+		<input type="file" name="image1" class="custom-file-input" /> 
+		
+		<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+		<div class="btn">
+<input class="button1" name="submit" type="submit" value="Insert">
+</div>
+	</form>
+<!-- insert part ends here -->
+</div>
+
+	
+	<h1 class="wrapper_h1">My custom slider panel</h1>
+	
+	<form method="post" action="" name="delete_form">
+	<div id="images_wrapper">
+		<div id="image_container">
+			<ul>
+				<?php foreach ($result as $item): ?>
+				
+				<li>
+					<div class="image_shower">
+						<input id="box1<?php echo $item['id']; ?>" type="checkbox" class="checkbox" name="checkbox[]" value="<?php echo $item['id']; ?>" style="cursor:pointer;" /> 
+						<label for="box1<?php echo $item['id']; ?>">
+							<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA). 'slider/small/'.$item['path']; ?>" for="box1" width="200" height="130" style="cursor:pointer; "/>
+						</label>
+						<div class="image_name">
+							<span><?php echo $item['name']; ?></span>
+						</div>
+					</div>
+				</li>
+				<?php endforeach; ?>
+			</ul>
+			<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+		</div>
+	</div>
+	<div class="delete">
+		<input class="button2" type="submit" value="DELETE" name="delete" id="delete_btn" />
+	</div>
+	</form>
+</div>
